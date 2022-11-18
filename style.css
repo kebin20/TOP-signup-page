@@ -1,3 +1,150 @@
-h1, h2 {
-  font-family: Lato;
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #1A1B21;
+  color: white;
+}
+
+img {
+width: 100%;
+height: 100%;
+}
+
+input {
+width: 20vw;
+height: 40px;
+margin-bottom: 2em;
+border: 1px solid #E5E7EB;
+border-radius: 8px;
+padding: 1em;
+}
+
+input:invalid {
+border-color: red;
+}
+
+input:invalid:required {
+border: black;
+}
+
+input:valid {
+border-color: green;
+}
+
+fieldset {
+border: none;
+}
+
+label{
+margin-bottom: 0.5em;
+}
+
+.logo-banner {
+display:flex;
+justify-content: center;
+align-items: flex-end;
+position: absolute;
+top: 15vh;
+width: 700px;
+height: 100px;
+background: linear-gradient(
+  rgba(0, 0, 0, 0.2), 
+  rgba(0, 0, 0, 0.2)
+);
+color: white;
+}
+
+.logo-banner> img {
+width: 95px;
+padding: 0.5em;
+}
+
+.logo-title{
+font-family: 'Righteous', cursive;
+margin-left: 0.5em;
+font-weight: 700;
+font-size: 2.5rem;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: 700px 1fr;
+grid-template-rows:  0.5fr 0.3fr 0.3fr; 
+grid-template-areas:
+  "image  intro"
+  "image  form"
+  "image  login"
+}
+
+.image{grid-area: image;}
+
+.intro{
+grid-area: intro;
+margin-left: 2em;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding-bottom: 3.5em;
+font-size: 1.1rem;
+}
+
+.intro > h1 {
+font-family: 'Righteous', cursive;
+border-bottom: 5px solid transparent;
+border-image: linear-gradient(to bottom right, #40e305 0%, #2c90fc 25%, #ff02e3 50%, #fec837 75%, #30b31d 100%);
+border-image-slice: 1;
+}
+
+.form{grid-area: form;}
+
+.login{
+grid-area: login;
+margin: 3em;
+}
+
+
+.signup {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+      "title title"
+      "col1 col2";
+  background-color: #D4A373;
+  color: #161619;
+  margin-bottom: 1em;
+}
+
+
+.form-title{
+grid-area: title;
+padding-left: 2em;
+font-family: 'Righteous', cursive;
+font-weight: 300;
+}
+
+.col-1{
+display:flex;
+flex-direction: column;
+grid-area: col1;
+padding-left: 3em;
+}
+
+.col-2{
+display:flex;
+flex-direction: column;
+grid-area: col2;
+}
+
+.create-account-btn {
+padding: 1em 2em;
+font-size: 1rem;
+border-radius: 8px;
+border: none;
+font-family: 'Righteous', cursive;
+cursor: pointer;
 }
