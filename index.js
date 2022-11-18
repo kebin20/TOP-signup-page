@@ -1,5 +1,6 @@
-const email = document.getElementById("email");
+import './style.css';
 
+const email = document.getElementById("email");
 
 email.addEventListener("input", (event) => {
   if (email.validity.typeMismatch) {
