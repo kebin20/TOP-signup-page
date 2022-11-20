@@ -1,17 +1,19 @@
-
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="style.css">
-<!--   Google Font -->
+  <!--   Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@700&family=Righteous&display=swap" rel="stylesheet">
-<!--   Font Awesome -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@700&family=Righteous&display=swap"
+    rel="stylesheet">
+  <!--   Font Awesome -->
   <script src="https://kit.fontawesome.com/566b902c1e.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
@@ -21,47 +23,56 @@
   <main>
     <div class="grid-container">
       <div class="logo-banner">
-        <img src="https://cdn-icons-png.flaticon.com/512/2079/2079366.png" alt="" class="logo"><h1 class="logo-title">Snowbord</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/2079/2079366.png" alt="" class="logo">
+        <h1 class="logo-title">Snowbord</h1>
       </div>
-      <img src="https://images.unsplash.com/photo-1617939532846-e37a818ca02d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80" alt="Picture of a snowboarder " class="image">
+      <img
+        src="https://images.unsplash.com/photo-1617939532846-e37a818ca02d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+        alt="Picture of a snowboarder " class="image">
       <div class="intro">
         <h1>Snowbord School</h1>
-          <p>Sign up to our daily email and newsletters for all of your snowboarding tips, tricks and goodies! Plus, you can manage all of your booking and account details once you sign up with us!</p>
-          <p>Let's get stoked.</p>
+        <p>Sign up to our daily email and newsletters for all of your snowboarding tips, tricks and goodies! Plus, you
+          can manage all of your booking and account details once you sign up with us!</p>
+        <p>Let's get stoked.</p>
       </div>
 
       <form action="">
         <div class="signup form">
-          <legend><h2 class="form-title">Ready to shred?</h2></legend>
-          <fieldset class="col-1">
-          <label for="fname">First Name:</label>
-          <input type="text" id="fname" name="fname" required placeholder="Enter your first name">
+          <legend>
+            <h2 class="form-title">Ready to shred?</h2>
+          </legend>
+            <div class="input-el">
+              <label for="fname">First Name:</label>
+              <input type="text" id="fname" name="fname" required placeholder="Enter your first name">
+            </div>
+            <div class="input-el">
+              <label for="lname">Last Name:</label>
+              <input type="text" id="lname" name="lname" required placeholder="Enter your last name">
+            </div>
+            <div class="input-el">
+              <label for="phone_number">Phone Number:</label>
+              <input type="tel" id="phone_number" name="phone_number" required placeholder="Enter your phone number">
+            </div>
+            <div class="input-el">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="input-el">
+              <label for="userPassword">Password: </label>
+              <input id="userPassword" type="password" size="12" required placeholder="Enter your password" />
+            </div>
+            <div class="input-el">
+              <label for="confirmPassword">Confirm Password: </label>
+              <input id="userPassword" type="password" size="12" required placeholder="Confirm your password" />
+            </div>
+        </div>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required placeholder="Enter your email">
-
-          <label for="userPassword">Password: </label>
-          <input id="userPassword" type="password" size="12" required placeholder="Enter your password" />  
-          </fieldset>
-
-          <fieldset class="col-2"> 
-          <label for="lname">Last Name:</label>
-          <input type="text" id="lname" name="lname" required placeholder="Enter your last name">
-
-          <label for="phone_number">Phone Number:</label>
-          <input type="tel" id="phone_number" name="phone_number"
-                 required placeholder="Enter your phone number">
-
-          <label for="confirmPassword">Confirm Password: </label>
-          <input id="userPassword" type="password" size="12" required placeholder="Confirm your password"/>
-          </fieldset>          
-      </div>
-      
-  <div class="login">
-      <button class="create-account-btn">Create Account</button>
-      <p>Already have an account? <a href="url">Log in</a></p>
-  </div>
+        <div class="login">
+          <button class="create-account-btn">Create Account</button>
+          <p>Already have an account? <a href="url">Log in</a></p>
+        </div>
       </form>
   </main>
 </body>
+
 </html>
