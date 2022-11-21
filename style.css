@@ -16,6 +16,7 @@ img {
 
 input {
   width: 20vw;
+  display: block;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 1em;
@@ -102,6 +103,10 @@ fieldset {
   border-image-slice: 1;
 }
 
+.intro > p {
+  width: 95%;
+}
+
 .form {
   grid-area: form;
 }
@@ -120,7 +125,7 @@ fieldset {
 }
 
 .form-title {
-  padding-left: 1em;
+  padding-left: 1.8em;
   font-family: 'Righteous', cursive;
   font-weight: 300;
 }
@@ -131,7 +136,7 @@ legend {
 
 .input-el {
   padding: 0.5em;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 .create-account-btn {
